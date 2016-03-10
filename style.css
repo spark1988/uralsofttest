@@ -1,0 +1,55 @@
+
+html {font-size: 12px; background-image:url(images/Fon.png); background-color: grey}
+body {margin:0; padding: 0; 
+} 
+form {margin: auto}
+h1 {color:#595857; font-size: 20px;}
+.main { 
+    
+ }
+.clear {clear: both}
+
+#login {
+	width: 423px;
+	height: 700px;
+	margin: auto;
+	margin-top: 2%;
+
+	border-radius: 20px;
+    background: linear-gradient(0deg, #ff8a00 0%, #ffe553 100%);
+    
+}
+input[type="text"] {padding-left: 10px; width: 204px; height: 34px; border-radius: 20px;
+font-size: 20px; color:#cccccc; }
+
+
+    input[type="submit"] {width: 111px; height: 26px; border-radius: 20px;
+        color: #464646; background: linear-gradient(0deg, #ff8a00 0%, #ffe553 100%);
+        
+font-size: 16px;  font-weight:bold; 
+
+-webkit-box-shadow: 0px 0px 10px 5px rgba(77,73,77,1);
+-moz-box-shadow: 0px 0px 10px 5px rgba(77,73,77,1);
+box-shadow: 0px 0px 10px 5px rgba(77,73,77,1);}
+
+.closefield {
+    width: 355px;
+    height: 34px;
+     background: url(images/Shape-4.png);
+    border-radius: 20px 20px 0px 0px;
+-moz-border-radius: 20px 20px 0px 0px;
+-webkit-border-radius: 20px 20px 0px 0px;
+border: 0px solid #000000;
+    
+}
+#text {border-top: 1px dashed white;
+border-bottom: 1px dashed white;
+margin-bottom: 15px;
+text-align: justify}
+
+
+.photo {width: 170px; height: 50px; margin-bottom: 20px;font-size: 13px;     margin-top: 30px;}
+.pic {float:left; margin-right: 15px;}
+.forma {margin: 0 0 10px 30px; padding: 10px; 
+    padding-right: 45px;
+}
