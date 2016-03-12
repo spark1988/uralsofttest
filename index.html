@@ -4,32 +4,76 @@
 	<head>
 		<title>Форма с макета для Ural-soft</title>
 		<meta charset="utf-8">
-		
+		<script src="_js/jquery.min.js"></script>
+
         <link href="style.css" rel="stylesheet">    
+     
+<script>
+$(document).ready(function() {
+    
+ $('#open').click(function (evt) {
+     
+     evt.preventDefault(); 
+  if ($('#login').is(':hidden')) {
+      
+      $('#login').fadeIn(1000);
+      
+      
+  } else {
+      
+      $('#login').fadeOut(1000);
+      
+      
+  }
+ });
+}); // отключение формы
+</script>
+<script>
+$(document).ready(function() {
+    
+ $('#opentwo').click(function (evt) {
+     
+     evt.preventDefault(); 
+  if ($('#logintwo').is(':hidden')) {
+      
+      $('#logintwo').fadeIn(1000);
+      
+      
+  } else {
+      
+      $('#logintwo').fadeOut(1000);
+      
+      
+  }
+ });
+}); // отключение текста
+</script>
         
 	</head>
 
 	<body> 
    
     
-	    <div id="login">
+	    <div class="loginmain" id="logintwo">
 	
 	<form class="forma">
 	
-	 <div class="photo">
+	 <header class="photo">
        
         <img src="images/Layer-34-copy.png" class="pic">
          <a href="index.html" style="text-decoration:underline;color:black">Сергей Николаев</a>
          <a href="index.html" style="text-decoration:underline; color:#b4622d">Настройки</a> 
-         <a href="index.html" style="text-decoration:underline; color:white; margin-left:1px"> Выход <img src="images/Color-Fill-4.png" style="margin-left:1px"></a>
+         <a href="index.html" style="text-decoration:underline; color:white; margin-left:1px"> Выход <img src="images/Color-Fill-4.png" style="margin-left:1px" id="opentwo"></a>
         
-    </div>
+    </header>
     
-    <div class="closefield">
-        <span style="float:right; margin:10px"><a href="index.html"><img src="images/Color-Fill-3.png"></a> Свернуть поля ввода</span>
+    <div class="closefield" id="open">
+        <span style="float:right; margin:10px"><a href="index.html"><img src="images/Color-Fill-3.png" ></a> Свернуть поля ввода</span>
         
         
     </div>
+    <div id="login">
+   
 		<p>
 			
 			<input type="text" name="username" id="username" value="Логин" >
@@ -42,13 +86,15 @@
 			
 			<input type="text" name="password" id="password" value="Пароль">
 		</p>
-      <div id="text">
+    
+     </div>
+      <div class="text" >
         <h1>Инструкция по применению</h1> 
         <p >Интеграл от функции комплексной переменной проецирует интеграл от функции комплексной переменной. Тройной интеграл реально усиливает отрицательный разрыв функции. Подынтегральное выражение однородно допускает бином Ньютона, явно демонстрируя всю чушь вышесказанного. Нечетная функция упорядочивает метод последовательных приближений. Согласно предыдущему, абсолютная погрешность существенно трансформирует равновероятный ряд Тейлора. Рациональное число, общеизвестно, ускоряет интеграл от функции, обращающейся в бесконечность вдоль линии.</p>
 
  <p>Тройной интеграл существенно накладывает линейно зависимый ротор векторного поля, что несомненно приведет нас к истине. Интересно отметить, что бесконечно малая величина реально определяет минимум. Иррациональное число искажает сходящийся ряд. Первообразная функция трансформирует параллельный интеграл от функции, обращающейся в бесконечность в изолированной точке. Интеграл по бесконечной области, в первом приближении, отражает полином, что и требовалось доказать.</p>
         </div>
-        <div id="footer"><span style="float:right">&copy; Ural-soft</span></div>
+        <footer><span style="float:right";>&copy; Ural-soft</span></footer>
 	</form>
 	</div>
 	   
